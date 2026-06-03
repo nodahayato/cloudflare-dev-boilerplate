@@ -1,0 +1,22 @@
+{
+  "name": "@starter/db",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "lint": "eslint src drizzle.config.ts --ext .ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.44.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251010.0",
+    "drizzle-kit": "^0.31.5"
+  }
+}

@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+coverage/
+.vite/
+
+# local Cloudflare state
+.wrangler/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+
+# local env files
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# OS / editor noise
+.DS_Store
+*.swp
+*.swo
+
+# local databases and logs
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.log

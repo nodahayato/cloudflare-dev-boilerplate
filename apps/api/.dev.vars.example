@@ -1,0 +1,6 @@
+# Wrangler local development variables.
+# Copy this file to apps/api/.dev.vars for local `wrangler dev` runs.
+# For deployed environments, use `wrangler secret put BETTER_AUTH_SECRET` and
+# configure non-secret vars in wrangler.jsonc.
+
+BETTER_AUTH_SECRET=replace-with-a-long-random-secret

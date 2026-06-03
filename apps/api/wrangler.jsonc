@@ -1,0 +1,58 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "starter-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-06-02",
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "APP_ENV": "development",
+    "BETTER_AUTH_URL": "http://127.0.0.1:8787/api/auth",
+    "PUBLIC_APP_URL": "http://127.0.0.1:5173",
+    "CORS_ORIGIN": "http://127.0.0.1:5173"
+  },
+  "d1_databases": [
+    {
+      "binding": "AUTH_DB",
+      "database_name": "starter-auth-dev",
+      "database_id": "replace-with-your-d1-database-id"
+    }
+  ],
+
+  // Optional product-specific bindings. Uncomment and rename per real app.
+  // "r2_buckets": [
+  //   {
+  //     "binding": "ASSETS_BUCKET",
+  //     "bucket_name": "replace-with-your-r2-bucket-name"
+  //   }
+  // ],
+  // "queues": {
+  //   "producers": [
+  //     {
+  //       "binding": "APP_QUEUE",
+  //       "queue": "replace-with-your-queue-name"
+  //     }
+  //   ]
+  // },
+
+  // Example deployed env shape:
+  // "env": {
+  //   "preview": {
+  //     "vars": {
+  //       "APP_ENV": "preview",
+  //       "BETTER_AUTH_URL": "https://preview-api.example.com/api/auth",
+  //       "PUBLIC_APP_URL": "https://preview.example.com",
+  //       "CORS_ORIGIN": "https://preview.example.com"
+  //     }
+  //   },
+  //   "production": {
+  //     "vars": {
+  //       "APP_ENV": "production",
+  //       "BETTER_AUTH_URL": "https://api.example.com/api/auth",
+  //       "PUBLIC_APP_URL": "https://example.com",
+  //       "CORS_ORIGIN": "https://example.com"
+  //     }
+  //   }
+  // }
+}
