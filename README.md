@@ -43,6 +43,31 @@ If you use `nvm`:
 nvm use
 ```
 
+## Use as a template
+
+This repository is intended to be used as a starting point for new apps.
+
+### On GitHub
+
+- Click **Use this template**
+- Create a new repository from it
+- Clone your new repository locally
+
+### Locally from a clone
+
+```bash
+git clone https://github.com/nodahayato/cloudflare-dev-boilerplate.git my-new-app
+cd my-new-app
+pnpm install
+```
+
+After cloning for a real project, update at least these items first:
+
+- package names in `package.json` files
+- app / service names in `apps/api/wrangler.jsonc`
+- placeholder D1 / R2 / Queue binding names
+- README title and project description
+
 ## Quick start
 
 ```bash
